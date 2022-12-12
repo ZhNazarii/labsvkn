@@ -1,0 +1,5 @@
+with open('input.txt', 'r') as file: 
+                
+   text = file.read() 
+print("Кількість слів у тексті: ", len(text.split(' '))) 
+print("Кількість розповідних, питальних, окличних речень: ", text.count('. ')+text.count('! ')+text.count('? ')+1)
