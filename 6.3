@@ -1,0 +1,26 @@
+import math 
+import math as m 
+from math import log as lg 
+a=float(input("Введіть нижню границю ")) 
+b=float(input("Введіть верхню границю ")) 
+h=float(input("Введіть значення кроку "))
+
+spisok=[] 
+while a<=b: 
+    pudge = spisok.append(m.log10(abs(a + math.sqrt(a)))) 
+    a+=h 
+print(spisok) 
+
+maximum = spisok[0] 
+for i in range(1, len(spisok)): 
+    if spisok[i] > maximum: 
+        maximum = spisok[i] 
+index = spisok.index(maximum) 
+print(index) 
+
+minimum = spisok[0] 
+for i in range(1, len(spisok)): 
+    if spisok[i] < minimum: 
+        minimum = spisok[i] 
+index = spisok.index(minimum) 
+print(index)
