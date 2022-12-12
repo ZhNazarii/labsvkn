@@ -1,0 +1,10 @@
+string = input("Введіть рядок: ") 
+
+d = {'Буквы': 0, 'Цифры': 0} 
+for i in string: 
+    if i.isalpha(): 
+        d['Буквы'] += 1 
+    elif i.isdigit(): 
+        d['Цифры'] += 1 
+
+print(d['Цифры'], d['Буквы']) 
