@@ -1,0 +1,7 @@
+import os 
+import shutil 
+path = 'MY_PYTHON' 
+files = os.listdir(path) 
+for file in files[2]: 
+   os.makedirs(path, exist_ok=True) 
+   shutil.copy(os.path.join(path, file), path) 
