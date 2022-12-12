@@ -1,0 +1,6 @@
+with open('input.txt', 'r') as file: 
+   text = file.readline() 
+def count_vowels(text): 
+  return sum([1 for x in text.lower() if x in 'aeiou']) 
+countvowels = count_vowels(text) 
+print(countvowels)
